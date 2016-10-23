@@ -1,5 +1,7 @@
 # vi:ts=4:
 
+obj-m += hmac-sha2-256-128.o
+
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
