@@ -64,4 +64,14 @@ crypto map shitty-vpn 10 ipsec-manual
  match address shitty-vpn
 int gi0/0
  crypto map shitty-vpn
+interface Tunnel0
+ description shitty-vpn tunnel
+ ip address 10.254.254.6 255.255.255.252
+ no ip redirects
+ ip mtu 1400
+ delay 1000
+ tunnel source GigabitEthernet0/0
+ tunnel destination 456.7.8.9
+ tunnel key 184483332
+
 ```
