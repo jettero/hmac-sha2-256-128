@@ -1,4 +1,11 @@
 /*
+ * NOTE: Evidentally you can just copy a module file, edit to taste
+ * and compile like this... who knew
+ *
+ */
+
+
+/*
  * xfrm algorithm interface
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
